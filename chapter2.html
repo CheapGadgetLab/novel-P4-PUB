@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="ja" class="sepia" dir="ltr">
+<html lang="ja" class="light" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -37,7 +37,7 @@
         <!-- Provide site root to javascript -->
         <script>
             var path_to_root = "";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "sepia";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -62,7 +62,7 @@
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
-            html.classList.remove('sepia')
+            html.classList.remove('light')
             html.classList.add(theme);
             var body = document.querySelector('body');
             body.classList.remove('no-js')
@@ -89,7 +89,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item affix "><a href="chapter1.html">第1章：ホワイト・ルング</a></li><li class="chapter-item affix "><a href="chapter2.html" class="active">第2章：一年前の密約</a></li><li class="chapter-item affix "><a href="chapter3.html">第3章：新たな聖域</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="chapter1.html">第1章：ホワイト・ルング</a></li><li class="chapter-item expanded affix "><a href="chapter2.html" class="active">第2章：一年前の密約</a></li><li class="chapter-item expanded affix "><a href="chapter3.html">第3章：新たな聖域</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
