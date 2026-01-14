@@ -8,6 +8,27 @@
 
 
         <!-- Custom HTML head -->
+        /* Cusdisの入力欄をわかりやすくする */
+        #cusdis_thread iframe {
+            border: 1px solid #b5a47e !important; /* セピアに馴染む濃いめの枠線 */
+            border-radius: 8px;                    /* 角を丸くして柔らかい印象に */
+            background-color: #ffffff66 !important; /* ほんのり白く浮かび上がらせる */
+            padding: 10px;
+            width: 100% !important;
+            min-height: 200px;
+        }
+        
+        /* 「コメントを書く」という見出しを勝手に追加する（オプション） */
+        #cusdis_thread::before {
+            content: "💬 感想・コメントはこちら";
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #3d3522;
+            border-bottom: 2px solid #b5a47e;
+            padding-bottom: 5px;
+        }
+        
         <div id="cusdis_thread"
           data-host="https://cusdis.com"
           data-app-id="b7c67cc6-274a-4e55-a68e-2c8add9d740e"
